@@ -10,6 +10,16 @@ This program is released as open source software under the terms of [MIT License
 
 # Installing
 
+Clone this repository: 
+```
+git clone https://github.com/bionitio-team/bionitio-cpp
+```
+
+Move into the repository directory:
+```
+cd bionitio-cpp
+```
+
 Bionitio uses the `cmake` tool to build an executable. You will need to have `cmake` installed on your system.
 
 On OS X you can install `cmake` via Homebrew like so (you might need to run `brew update` first`):
