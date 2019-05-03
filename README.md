@@ -24,7 +24,7 @@ $ cd bionitio-cpp
 
 Bionitio uses the `cmake` tool to build an executable. You will need to have `cmake` installed on your system.
 
-On OS X you can install `cmake` via Homebrew like so (you might need to run `brew update` first`):
+On OS X you can install `cmake` via Homebrew like so (you might need to run `brew update` first):
 ```
 % brew install cmake
 ```
@@ -152,7 +152,6 @@ $ bionitio --log bt.log file1.fasta file2.fasta
 # normal bionitio output appears here
 # contents of log file displayed below
 ```
-XXX fixme
 
 ## Empty files
 

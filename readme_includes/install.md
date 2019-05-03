@@ -1,6 +1,6 @@
 Bionitio uses the `cmake` tool to build an executable. You will need to have `cmake` installed on your system.
 
-On OS X you can install `cmake` via Homebrew like so (you might need to run `brew update` first`):
+On OS X you can install `cmake` via Homebrew like so (you might need to run `brew update` first):
 ```
 % brew install cmake
 ```
