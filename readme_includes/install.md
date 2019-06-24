@@ -8,7 +8,7 @@ On OS X you can install `cmake` via Homebrew like so (you might need to run `bre
 The instructions below show you how to build bionitio. They assume that you set the shell variable `BIONITIO_CPP_PATH` to refer to the source directory of bionitio. For example, you might set it like so:
 
 ```
-% export BIONITIO_CPP_PATH=$HOME/code/bionitio/cpp/src
+% export BIONITIO_CPP_PATH=$HOME/code/bionitio-cpp/src
 ```
 
 Execute the commands below to build bionitio. Note that bionitio depends on the `Seqan` library.
