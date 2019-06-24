@@ -32,7 +32,7 @@ On OS X you can install `cmake` via Homebrew like so (you might need to run `bre
 The instructions below show you how to build bionitio. They assume that you set the shell variable `BIONITIO_CPP_PATH` to refer to the source directory of bionitio. For example, you might set it like so:
 
 ```
-% export BIONITIO_CPP_PATH=$HOME/code/bionitio/cpp/src
+% export BIONITIO_CPP_PATH=$HOME/code/bionitio-cpp/src
 ```
 
 Execute the commands below to build bionitio. Note that bionitio depends on the `Seqan` library.
@@ -44,6 +44,15 @@ Execute the commands below to build bionitio. Note that bionitio depends on the 
 % cd bionitio-build
 % cmake $BIONITIO_CPP_PATH -DCMAKE_MODULE_PATH=$BIONITIO_CPP_PATH/seqan-library-2.1.1/share/cmake/Modules/ -DSEQAN_INCLUDE_PATH=$BIONITIO_CPP_PATH/seqan-library-2.1.1/include/ -DCMAKE_CXX_FLAGS=-std=c++11
 % make
+```
+
+By default this will build the executables in the same directory as the make command was run. If you want to install to a different location you can add a flag to the `cmake` command above:
+```
+-DCMAKE_INSTALL_PREFIX=/path/of/install/directory
+```
+Then run
+```
+make install
 ```
 
 If you want to use a specific compiler, such as clang++ on OSX then add a flag like so to the `cmake` command above:
