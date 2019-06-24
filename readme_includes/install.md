@@ -22,6 +22,15 @@ Execute the commands below to build bionitio. Note that bionitio depends on the 
 % make
 ```
 
+By default this will build the executables in the same directory as the make command was run. If you want to install to a different location you can add a flag to the `cmake` command above:
+```
+-DCMAKE_INSTALL_PREFIX=/path/of/install/directory
+```
+Then run
+```
+make install
+```
+
 If you want to use a specific compiler, such as clang++ on OSX then add a flag like so to the `cmake` command above:
 ```
 -DCMAKE_CXX_COMPILER=clang++
