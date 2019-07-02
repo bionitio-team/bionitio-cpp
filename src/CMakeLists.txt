@@ -49,3 +49,5 @@ target_link_libraries (bionitio-cpp bionitio-lib ${SEQAN_LIBRARIES} ${Boost_LIBR
 
 enable_testing()
 add_test(NAME bionitio-unit-tests COMMAND bionitio-test)
+
+install (TARGETS bionitio-cpp DESTINATION bin)
