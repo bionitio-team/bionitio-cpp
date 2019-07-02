@@ -7,7 +7,7 @@ TOP_DIR=`pwd`
 
 # Run unit tests
 # src/bionitio-build/bionitio-test > /dev/null 2>&1 || {
-src/bionitio-build/bionitio-test || {
+bionitio-test || {
     echo "'unit test' failed"
     let errors+=1
 }
