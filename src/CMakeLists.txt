@@ -2,7 +2,7 @@
 cmake_minimum_required (VERSION 3.0.0)
 
 # Name of project and that it is C++ only.
-project (bionitio-cpp CXX)
+project (bionitio CXX)
 set(BIONITIO_LIB_SRC options.cpp fasta_stats.cpp error.cpp)  
 
 add_library(bionitio-lib STATIC ${BIONITIO_LIB_SRC})
@@ -44,10 +44,10 @@ endif()
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${SEQAN_CXX_FLAGS}")
 
 # Add executable and link against SeqAn dependencies.
-add_executable (bionitio-cpp bionitio.cpp)
-target_link_libraries (bionitio-cpp bionitio-lib ${SEQAN_LIBRARIES} ${Boost_LIBRARIES})
+add_executable (bionitio bionitio.cpp)
+target_link_libraries (bionitio bionitio-lib ${SEQAN_LIBRARIES} ${Boost_LIBRARIES})
 
 enable_testing()
 add_test(NAME bionitio-unit-tests COMMAND bionitio-test)
 
-install (TARGETS bionitio-cpp bionitio-test DESTINATION bin)
+install (TARGETS bionitio bionitio-test DESTINATION bin)
