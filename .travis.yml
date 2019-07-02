@@ -5,7 +5,7 @@ services:
 language: cpp
 
 before_install:
-  - docker build -t bionitio-c .
+  - docker build -t bionitio-cpp .
     #- ./.travis/install-dependencies.sh 
 
 script:
